@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctico de Formularios 2</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <hr>
+
+    <h2>Solicitud de Servicio</h2>
+
+    <form id="formServicio" method="POST">
+        <br><label>Nombre:</label>
+        <input type="text" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" class="email" required><br><br>
+
+        <label>Tipo de servicio:</label>
+        <select required>
+            <option value="">Seleccione</option>
+            <option>Instalación</option>
+            <option>Mantenimiento</option>
+            <option>Configuración</option>
+            <option>Otro</option>
+        </select><br><br>
+
+        <label>Fecha:</label>
+        <input type="date" required><br><br>
+
+        <label>Descripción:</label><br>
+        <textarea class="descripcion" rows="5" cols="25" required></textarea><br><br>
+
+        <label>
+            <input type="checkbox"> Urgente
+        </label><br><br>
+
+        <button type="submit">Enviar</button>
+        <p class="mensaje"></p>
+    </form>
+
+    <br><br>
+    <hr>
+
+
+
+    
+    <h2>Registro de Incidencia</h2>
+
+    <form id="formIncidencia" method="POST">
+        <br><label>Nombre:</label>
+        <input type="text" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" class="email" required><br><br>
+
+        <label>Título:</label>
+        <input type="text" class="titulo" required><br><br>
+
+        <label>Descripción:</label><br>
+        <textarea class="descripcion" rows="5" cols="25" required></textarea><br><br>
+
+        <label>Tipo:</label>
+        <select required>
+            <option value="">Seleccione</option>
+            <option>Hardware</option>
+            <option>Software</option>
+            <option>Red</option>
+        </select><br><br>
+
+        <label>Prioridad:</label>
+        <select class="prioridad" required>
+            <option value="">Seleccione</option>
+            <option>Baja</option>
+            <option>Media</option>
+            <option>Alta</option>
+        </select><br><br>
+
+        <button type="submit">Enviar</button>
+        <p class="mensaje"></p>
+    </form>
+
+    <br><br>
+    <hr>
+
+
+
+
+
+    <h2>Alta de Equipo</h2>
+
+    <form id="formEquipo" method="POST">
+        <br><label>Nombre del equipo:</label>
+        <input type="text" required><br><br>
+
+        <label>Tipo:</label>
+        <select required>
+            <option value="">Seleccione</option>
+            <option>PC</option>
+            <option>Laptop</option>
+            <option>Proyector</option>
+        </select><br><br>
+
+        <label>Número de serie:</label>
+        <input type="text" required><br><br>
+
+        <label>Fecha de adquisición:</label>
+        <input type="date" required><br><br>
+
+        <label>Estado del equipo:</label>
+        <select required>
+            <option value="">Seleccione</option>
+            <option>Activo</option>
+            <option>En reparación</option>
+            <option>Fuera de servicio</option>
+        </select><br><br>
+
+        <button type="submit">Registrar</button>
+        <p class="mensaje"></p>
+    </form>
+
+    <br><br>
+    <hr>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
